@@ -1,0 +1,302 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  color: #333;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+p {
+  padding: 3px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+input[type="number"],
+select {
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Border color of the input boxes and dropdown menus*/
+  border: 1px solid #d9dbdc;
+  border-radius: 0px;
+  /* Background color of the input boxes and dropdown menus*/
+  background-color: white;
+  /* Text color of the input boxes and dropdown menus*/
+  color: #333;
+  padding: 8px 12px;
+}
+
+/* input[type="button"] {
+  background-color: #04baa5;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 12px 0;
+  border: none;
+  cursor: pointer;
+} */
+
+/* input[type="button"]:hover {
+  background-color: #04736b;
+} */
+
+#shrinkage-calculator.box,
+#percentCalc.box {
+  padding: 20px;
+  /* Background color of bounding box of the first two calculators */
+  background-color: #f0f0f0;
+  /* Border color of bounding box of the first two calculators */
+  border: 1px solid rgb(206, 206, 206);
+}
+
+/* ============================================ */
+
+.input-group-text {
+  display: initial;
+  font-size: 1em;
+  width: 116px;
+  color: #000;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  background-color: #ddd;
+}
+
+#percentCalc .selection {
+  position: relative;
+}
+
+#pc-answer {
+  margin: 5px;
+  font-size: 1.1em;
+}
+
+#unit-converter .optionList {
+  width: 100%;
+  /* Border color of the option table in unit converter */
+  border: 1px solid rgb(206, 206, 206);
+  background-color: #fff;
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#unit-converter .reset,
+#percentCalc .reset {
+  background-color: #333;
+  color: #fff;
+}
+
+#unit-converter .reset:hover,
+#percentCalc .reset:hover {
+  /* Background color of clear buttons during mouse hover */
+  background-color: #555;
+}
+
+#unit-converter .optionList > input {
+  /* Background color color of option table items */
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  /* Text color color of option table items buttons */
+  color: #333;
+  margin: 0;
+  text-align: left;
+  padding: 3px;
+  background-color: #fff;
+}
+
+#unit-converter .optionList > input:hover {
+  /* Background color of option table items during mouse hover */
+  background-color: #ddd;
+}
+
+#unit-converter .optionList > input:focus {
+  outline: none;
+}
+
+#unit-converter .optionList > input.active {
+  /* Background color of the selected option table item */
+  background-color: #ccc;
+}
+
+#unit-converter input[name="to-val"] {
+  background-color: #f5f5f5;
+  cursor: default;
+}
+
+#unit-converter .box {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid rgb(206, 206, 206);
+  z-index: 1;
+}
+
+@media only screen and (min-width: 576px) {
+  #unit-converter .menu {
+    width: 70%;
+    min-width: 570px;
+  }
+}
+
+#unit-converter .menu {
+}
+
+#unit-converter .menu > div {
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#unit-converter .menu > div > div {
+  margin-right: 5px;
+  background-color: #ddd;
+  padding: 8px 8px;
+  border: 1px solid #ccc;
+}
+
+#unit-converter .menu > div > div.active {
+  background-color: #f0f0f0;
+  /*    border-bottom: 1px solid #f0f0f0;*/
+}
+
+#shrinkage-calculator > .result {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#unit-converter .result {
+  margin-top: 1em;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    min-width: initial;
+  }
+  .input-group-text {
+    width: 96px;
+  }
+  #unit-converter .menu > div > div.active {
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+
+/* ============================================================== */
+.calculatorWrap input.button:focus,
+.calculatorWrap input.window:focus {
+  /*outline: 1px solid #000;*/
+}
+
+.calculatorWrap input.window {
+  width: 99.6%;
+  height: 96%;
+  padding-right: 5%;
+  padding-left: 5%;
+  line-height: 50%;
+  border: 1px solid #999;
+  font-size: 120%;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: right;
+  position: absolute;
+  left: 0;
+}
+
+.calculatorWrap .row > div {
+  position: relative;
+  float: left;
+  padding-bottom: 8.03571428571%;
+  height: 0;
+}
+
+.calculatorWrap input.button {
+  position: absolute;
+  left: 0;
+  width: 98%;
+  padding: 0;
+  height: 96%;
+  line-height: 50%;
+  text-align: center;
+  color: #000;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  font-size: 150%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.calculatorWrap input.number {
+  background-color: #f6f6f6;
+  color: #000000;
+  font-weight: bold;
+}
+
+.calculatorWrap input[name="negate"] {
+  background-color: #f6f6f6;
+  color: #000000;
+  font-weight: bold;
+}
+
+.calculatorWrap.calc-large input[name="negate"] {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.calculatorWrap input.operator {
+  /* background-color: #F1C9C7; */
+  background-color: #04baa5;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* .calculatorWrap input.button:hover {
+  border: 1px solid #999; 
+  filter: brightness(95%);
+}
+
+.calculatorWrap input.button:active {
+  background-color: #eee; 
+}
+
+.calculatorWrap input.button:focus {
+  filter: brightness(85%);
+} */
+
+#calculatorBlock.box {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid rgb(206, 206, 206);
+  text-align: center;
+}
+
+.calculatorWrap {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .calculatorWrap input.window {
+    font-size: 150%;
+  }
+  .calculatorWrap input.button {
+    font-size: 150%;
+  }
+
+  .calculatorWrap .row > div {
+    padding-bottom: 14.0625%;
+  }
+}
